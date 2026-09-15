@@ -1,3 +1,5 @@
+//! exercicios de repetição
+
 //* repetição de 1 a 10
 // for (let i = 0; i < 11; i++) {
 //   console.log(i);
@@ -13,7 +15,19 @@
 //         console.log(`${numeroRecebido} X ${i} = ${numeroRecebido * i}`)
 // })
 
-//* soma dos primeiros N números naturais
+//*Soma dos primeiros N números naturais
 
- const botaoEnviado = document.getElementById("enviarNumeroUsuario")
- 
+// const botaoEnviado = document.getElementById("enviarNumeroUsuario");
+
+// botaoEnviado.addEventListener("click", function () {
+//     let valorVariavel = 0;
+//     let numeroRecebido = document.getElementById("numeroUsuario").value;
+//     for (let i = 1; i <= numeroRecebido; i++) 
+//         valorVariavel = i + valorVariavel;
+//         console.log(valorVariavel);
+        
+// })
+
+
+
+
