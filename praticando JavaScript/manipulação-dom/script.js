@@ -52,11 +52,11 @@ const resultado = document.getElementById("resultado");
 //     resultado.innerText = campo.value //value -oque esta sendo digitado dentro do campo
 // })
 
-//evento de mouse
-const elemento = document.getElementById("troca-cor");
-const botao = document.getElementById("btn");
+// //evento de mouse
+// const elemento = document.getElementById("troca-cor");
+// const botao = document.getElementById("btn");
 
-// //mouseover => quando passar o mouse pelo elemento
+// // //mouseover => quando passar o mouse pelo elemento
 // elemento.addEventListener("mouseover", () => {
 //     elemento.style.backgroundColor = "#FF0000";
 // })
@@ -72,17 +72,49 @@ const botao = document.getElementById("btn");
 
 // document.addEventListener("mousemove", (evento) => {
 //     console.log(`posição X: ${evento.clientX}, Posição Y: ${evento.clientY}`);
-    
+
 // } )
 
 //evento de formulario (submit)
 
-const form = document.querySelector("form"); // pegando direto pela tag form
+// const form = document.querySelector("form"); // pegando direto pela tag form
 
-form.addEventListener("submit", (e) => {
-    e.preventDefault(); // bloquea o comportamento padrao do formulario que é recarregar a pagina ao enviar o submit
-    const nome = document.getElementById("nome").value
-    
-    console.log(`Nome: ${nome}`);
-    
+// form.addEventListener("submit", (e) => {
+//     e.preventDefault(); // bloquea o comportamento padrao do formulario que é recarregar a pagina ao enviar o submit
+//     let nome = document.getElementById("nome").value
+
+//     console.log(`Nome: ${nome}`);
+// })
+
+//*criando elementos na pagina
+// const novoElemento = document.createElement("p"); //? cria o elemento p
+// novoElemento.innerText = "Elemento novo criado.";
+// const form = document.getElementById("form");
+// form.appendChild(novoElemento); //? estamos adicionando um elemento filho (p) denrto de pai (form)
+
+// //* criar um botao
+// const botao = document.createElement("button");
+// botao.innerText = "Excluir elemento";
+
+// form.appendChild(botao);
+
+// botao.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     novoElemento.remove;
+//     //apagando direto do pai
+//     form.removeChild(novoElemento)
+// })
+
+//*adicionando elementos em um alista apartir de um input
+
+const input = document.getElementById("input");
+const botao = document.getElementById("add");
+const lista = document.getElementById("lista");
+
+botao.addEventListener("click", () => {
+const valorDigitado = input.value; // pega o valor que foi digitado dentro do input
+
+const li = document.createElement("li"); //criando <li>
+li.innerText = valorDigitado;
+lista.appendChild(li); // colocando o filho (li) dentro do pai
 })
